@@ -1,0 +1,63 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+
+
+// Our variables
+$base-font-family: Roboto, Helvetica, Arial, sans-serif;
+$base-font-size:   (20 / 16) * 1em;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.45;
+
+$code-font-family: 'Droid Sans Mono', Courier, monotype;
+
+$header-font-family: 'Source Sans Pro', Roboto, Helvetica, Arial, sans-serif;
+
+$spacing-unit:     30px;
+
+/* Coolors Exported Palette - coolors.co/e0d4d7-2f363a-90c5f2-689872-2c1833 */
+$c-crema:	 #F1E8B8; //rgba(224, 212, 215, 100)
+$c-darksky:	 #2f363a; //rgba(47, 54, 58, 100)
+$c-blue:	 #37669C; //rgba(144, 197, 242, 100)
+$c-floor:	 #689872; //rgba(104, 152, 114, 100)
+$c-wood:	 #2c1833; //rgba(44, 24, 51, 100)
+
+$text-color:       $c-darksky;
+$background-color: $c-crema;
+$brand-color:      #2a7ae2;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Width of the content area
+$content-width:    1024px;
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+
+
+// Using media queries with like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "base",
+        "layout",
+        "zenburn"
+;
