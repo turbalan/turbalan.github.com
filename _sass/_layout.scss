@@ -234,3 +234,19 @@
         }
     }
 }
+
+
+//The sidebar
+.sidebar {
+
+  ul {
+    padding: $spacing-unit;
+    margin: 0;
+    color: $c-blue;
+  }
+
+  a {
+    color: $c-crema;
+    font-size: 0.85em;
+  }
+}

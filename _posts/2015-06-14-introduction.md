@@ -2,6 +2,7 @@
 layout: default
 title: Introduction
 permalink: /introduction/
+weight: 1
 ---
 #Purpose of this style guide
 
